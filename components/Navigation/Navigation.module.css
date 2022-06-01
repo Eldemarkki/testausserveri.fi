@@ -1,7 +1,9 @@
 .items {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    gap: 2rem;
 }
 
 .item {
@@ -18,10 +20,6 @@
 
 .item:hover {
     opacity: 1;
-}
-
-.items .item:not(:first-child) {
-    margin-left: 2rem;
 }
 
 .item.active {

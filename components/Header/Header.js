@@ -1,4 +1,4 @@
-import { CapsuleButton, ButtonIcon } from '../Button/CapsuleButton'
+import { CapsuleLink, CapsuleIcon } from '../Link/CapsuleLink'
 import { Logo } from '../Logo/Logo'
 import { Navigation } from '../Navigation/Navigation'
 import styles from './Header.module.css'
@@ -12,12 +12,10 @@ export function Header({pages, activePath}) {
         <div className={`${styles.header} ${open ? styles.open : ""}`}>
             <Logo className={styles.logo} showBeta link />
             <Navigation className={styles.navigation} pages={pages} activePath={activePath} open={open} setOpen={setOpen} />
-            <a href="https://discord.testausserveri.fi">
-                <CapsuleButton className={styles.button} variant="small">
-                    <ButtonIcon src={DiscordIcon} />
-                    Discord
-                </CapsuleButton>
-            </a>
+            <CapsuleLink href="https://discord.testausserveri.fi" variant="small">
+                <CapsuleIcon src={DiscordIcon} />
+                Discord
+            </CapsuleLink>
         </div>
     )
 }

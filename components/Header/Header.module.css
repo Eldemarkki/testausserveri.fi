@@ -1,26 +1,19 @@
 .header {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    /* The first and last columns have to be same size, 
+       so that the middle column will be centered exactly */
+    grid-template: auto / 200px 1fr 200px;
     align-items: center;
     margin: 2rem;
 }
 
-.header div {
-    /* flex: 1; */
-}
-
-.header>.logo {
-    flex-grow: 1;
-    flex-basis: 0;
-}
 .header>.navigation {
     text-align: center;
+    justify-self: center;
 }
 
-.header>a {
-    text-align: right;
-    flex-grow: 1;
-    flex-basis: 0;
+.header :last-child {
+    justify-self: end;
 }
 
 @media only screen and (max-width: 670px) {

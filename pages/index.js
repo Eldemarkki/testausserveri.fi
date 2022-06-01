@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styled from 'styled-components'
 import { TextLoop } from "../components/TextLoop/TextLoop";
-import { ButtonIcon, CapsuleButton } from '../components/Button/CapsuleButton';
+import { CapsuleIcon, CapsuleLink } from '../components/Link/CapsuleLink';
 import DiscordIcon from '../assets/DiscordIcon.svg'
 
 import { DiscordLive, HeroDiscordLive } from '../components/DiscordLive/DiscordLive'
@@ -104,15 +104,13 @@ export default function Home({ssGuildInfo}) {
               <GradientText>3D-artisteille</GradientText>
           </TextLoop>
         </Title>
-        <a href="https://discord.testausserveri.fi">
-          <CapsuleButton 
-            style={{margin: "-0.3rem 0 0.4rem 0"}} 
-            onMouseOver={() => {setHeroFocused(true)}}
-            onMouseLeave={() => {setHeroFocused(false)}}>
-              <ButtonIcon src={DiscordIcon} />
-            Tule juttelemaan!
-          </CapsuleButton>
-        </a>
+        <CapsuleLink href="https://discord.testausserveri.fi"
+          style={{ margin: "-0.3rem 0 0.4rem 0" }}
+          onMouseOver={() => { setHeroFocused(true) }}
+          onMouseLeave={() => { setHeroFocused(false) }}>
+          <CapsuleIcon src={DiscordIcon} />
+          Tule juttelemaan!
+        </CapsuleLink>
       </Center>
       <Content>
         <StatGroup stats={stats} />
