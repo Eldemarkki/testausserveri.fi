@@ -28,6 +28,9 @@ export default function IdeaList() {
                         Kotitekoinen <b>hallintapaneeli Headscale/Tailscale-palvelulle</b>, <a href="https://discord.com/channels/697710787636101202/896078854253346817/1329368070103240738">lisätietoja</a>.
                     </li>
                     <li>
+                        <b>Testaustime-lisäosa</b> sinun suosikkieditoriisi, <a href="https://testaustime.fi/extensions">lisätietoja</a>.
+                    </li>
+                    <li>
                         <i>Voit lisätä omia ideoitasi tänne luomalla pull requestin GitHubissa</i>
                     </li>
                 </ul>
