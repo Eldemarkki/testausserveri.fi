@@ -22,7 +22,7 @@ export default function IdeaList() {
                 <h2>Projekti-ideat</h2>
                 <ul>
                     <li>
-                        <b>Testauscord</b>: Discordin kaltainen chatpalvelu, jota voisimme ylläpitää itse. Lisätietoja hakusanalla "testauscord" Discord-palvelimellamme.
+                        <b>Testauscord</b>: Discordin kaltainen chatpalvelu, jota voisimme ylläpitää itse. Lisätietoja hakusanalla &quot;testauscord&quot; Discord-palvelimellamme.
                     </li>
                     <li>
                         Kotitekoinen <b>hallintapaneeli Headscale/Tailscale-palvelulle</b>, <a href="https://discord.com/channels/697710787636101202/896078854253346817/1329368070103240738">lisätietoja</a>.
